@@ -1,0 +1,40 @@
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-top: 2px solid #67e8f9;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #ffc8ef !important; 
+  color: #1e293b !important;       
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 16px !important;
+}
+
+.leaflet-popup-content {
+  margin: 14px 16px !important;
+  font-family: inherit;
+}
+
+.leaflet-popup-close-button {
+  color: #475569 !important;
+}
