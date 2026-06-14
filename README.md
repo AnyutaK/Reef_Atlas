@@ -85,6 +85,7 @@ Each reef popup displays:
  Reef Dataset
 ```
 ### File Structure ###
+```text
 Reef_Atlas/
 ├── .vscode/
 │   └── settings.json
@@ -113,7 +114,7 @@ Reef_Atlas/
 │   └── import_reefs.py
 ├── .gitignore
 └── README.md
-
+```
 ## Installation
 
 ### Clone Repository
@@ -121,11 +122,23 @@ Reef_Atlas/
 git clone https://github.com/yourusername/reef-atlas.git
 cd reef_atlas
 ```
-### Backend
+### Prerequisites
 
+Before running this project, ensure you have:
+
+- Node.js (v18 or higher)
+- npm (v9.0 ir higher)
+- Python (v3.9 or higher)
+- Git
+
+### Backend
 ```text
 cd backend
-pip install -r requirements.txt
+pip install fastapi uvicorn
+```
+To run development server
+On Terminal 
+```text
 uvicorn main:app --reload
 ```
 Backend runs on:
@@ -136,6 +149,10 @@ http://127.0.0.1:8000
 ``` text
 cd frontend
 npm install
+```
+To run development server
+On Terminal 
+```text
 npm run dev
 ```
 Frontend runs on:
@@ -143,28 +160,33 @@ Frontend runs on:
 http://localhost:5173
 ```
 ## Technical Skills Demonstrated
+
 ### Frontend Development
 -React
 -Component-based UI design
 -State management with React Hooks
 -Interactive geospatial visualization
 -Responsive interface development
+
 ### Backend Development
 - FastAPI
 - REST API development
 - Request handling and data processing
 -Backend–frontend integration
+
 ### Database Management
 -SQLite
 -SQL querying
 -Data preprocessing and validation
 -Structured data storage
+
 ### Geospatial Development
 -Leaflet mapping
 -Coordinate-based visualization
 -Spatial filtering
 -Viewport-based data loading
 -Dynamic map interactions
+
 ### Software Engineering
 -Full-stack application development
 -Client-server architecture
@@ -173,13 +195,16 @@ http://localhost:5173
 -Git version control
 
 ## Project Highlights
+
 -Visualized thousands of coral reef records on an interactive global map.
 -Implemented viewport-based spatial filtering to improve performance.
 -Built real-time reef search with autocomplete suggestions.
 -Developed fly-to navigation for rapid location discovery.
 -Generated live regional analytics from currently visible reef data.
 -Integrated React, FastAPI, SQLite, and Leaflet into a complete full-stack application.
+
 ## Performance & Scalability
+
 ### Performance Optimizations
 -Spatial filtering to load only reefs within the current map bounds
 -Dynamic data fetching based on viewport changes
@@ -187,12 +212,14 @@ http://localhost:5173
 -Marker sizing based on reef area for improved visual clarity
 -Lightweight REST API responses using FastAPI
 -Responsive map rendering with Leaflet
+
 ### Scalability Considerations
 -Modular React component structure
 -Separation of frontend, backend, and database layers
 -REST API architecture for future client integrations
 -Database-backed reef storage allowing dataset expansion
 -Geospatial query design suitable for migration to larger databases such as PostgreSQL
+
 ### Maintainability
 -Component-based React architecture
 -Reusable mapping and navigation components
@@ -200,30 +227,36 @@ http://localhost:5173
 -Consistent REST endpoint design
 -Easily extensible reef attribute model
 -Version controlled with Git and GitHub
+
 ## Notes 
 * The data of the coral reefs(location) is taken from UNEP World Conservation Monitoring Centre database ver.2018 available online.
 * To improve map accuracy and application performance, reef entries with incomplete or missing data were removed during preprocessing.Consequently, the displayed dataset is a curated subset of the original source data and may not include every known reef location worldwide.
 * Known Issue: Visible-region statistics may require a map movement after clearing a search result to trigger a refresh.
 * Bleaching Risk and Reef Health Score are synthetic attributes generated for demonstration and visualization purposes.
 * The Reef Health Assessment parameters are taken from healthyreefs.org and are based on extensive data from the Atlantic and Gulf Rapid Reef Assessment (AGRRA) database.
+  
 ## Future Improvements
+
 ### Phase 1: User Experience & Performance
 -Reef clustering to improve visualization in high-density regions
 -Advanced search filters (health score, bleaching risk, area, survey method)
 -Improved statistics panel 
 -Marker virtualization for smoother rendering at larger scales
 -Mobile-responsive redesign
+
 ### Phase 2: Geospatial Analysis
 -Heatmap visualization of reef density
 -Region-based reef analytics
 -Interactive reef comparison tools
 -Geographic filtering by country, ocean, or marine region
+
 ### Phase 3: Environmental Insights
 -Historical reef monitoring and trend visualization
 -Sea surface temperature overlays
 -Coral bleaching event tracking
 -Environmental risk indicators
 -Reef health change analysis over time
+
 ### Phase 4: Data Expansion
 -Integration of additional marine conservation datasets
 -Support for multiple reef data sources
