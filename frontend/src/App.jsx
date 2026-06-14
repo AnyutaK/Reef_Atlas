@@ -69,8 +69,8 @@ function App() {
     setLoadingMap(true);
 
     fetch(
-      `http://127.0.0.1:8000/reefs_in_view?north=${north}&south=${south}&east=${east}&west=${west}`
-    )
+  `${import.meta.env.VITE_API_URL}/reefs_in_view?north=${north}&south=${south}&east=${east}&west=${west}`
+)
       .then((res) => res.json())
       .then((data) => {
         setTimeout(() => {
@@ -118,7 +118,7 @@ function App() {
               setLoadingSearch(false);
               setSuggestions([]);
 
-              fetch("http://127.0.0.1:8000/reefs?NUMBER_OF_RESULTS=1000")
+              fetch(`${import.meta.env.VITE_API_URL}/reefs?NUMBER_OF_RESULTS=1000"`)
                 .then((res) => res.json())
                 .then((data) => setReefs(data));
 
@@ -126,7 +126,7 @@ function App() {
             }
 
             setLoadingSearch(true);
-            fetch(`http://127.0.0.1:8000/search?q=${query}`)
+            fetch(`${import.meta.env.VITE_API_URL}/search?q=${query}`)
               .then((res) => res.json())
               .then((data) => {
                 setTimeout(() => {
