@@ -2,6 +2,22 @@
 ***An Interactive Full-Stack Geospatial Exploration Platform for Global Coral Reefs***
 
 Reef Atlas is a modern full-stack geospatial web application designed for environmental scientists, researchers, and marine enthusiasts to explore, monitor, and analyze coral reef locations across the globe. By visualizing complex spatial datasets onto an intuitive interface, Reef Atlas transforms raw coordinate data into a responsive,
+
+## Problem Solved
+
+Global coral reef data is typically stored as large static datasets that are difficult to explore, filter, or analyze interactively.
+Traditional approaches require loading entire datasets, leading to poor performance and an inability to efficiently explore specific geographic regions.
+Reef Atlas solves this by introducing viewport-based spatial querying, allowing only relevant reef data within the visible map region to be loaded dynamically. This enables fast, interactive exploration of large geospatial datasets.
+
+## Key Benefits
+
+- Reduces data load by fetching only visible geospatial regions
+- Enables real-time, interactive exploration of coral reef ecosystems
+- Improves application performance and responsiveness at scale
+- Transforms raw geospatial coordinates into actionable visual insights
+- Supports scalable expansion to larger environmental datasets
+- Enhances usability through search, filtering, and dynamic analytics
+  
 ## Features
 
 ### Interactive Global Reef Map
