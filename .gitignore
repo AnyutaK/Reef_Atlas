@@ -218,3 +218,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 data/*.shp
+data/
+test_import.py
