@@ -1,7 +1,7 @@
 # Reef Atlas
 ***An Interactive Full-Stack Geospatial Exploration Platform for Global Coral Reefs***
 
-Reef Atlas is a modern full-stack geospatial web application designed for environmental scientists, researchers, and marine enthusiasts to explore, monitor, and analyze coral reef locations across the globe. By visualizing complex spatial datasets onto an intuitive interface, Reef Atlas transforms raw coordinate data into a responsive,
+Reef Atlas is a modern full-stack geospatial web application designed for environmental scientists, researchers, and marine enthusiasts to explore, monitor, and analyze coral reef locations across the globe. By visualizing complex spatial datasets onto an intuitive interface, Reef Atlas transforms raw coordinate data into a responsive
 
 ## Problem Solved
 
