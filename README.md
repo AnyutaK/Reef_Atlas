@@ -100,7 +100,7 @@ Each reef popup displays:
       ↓
  Reef Dataset
 ```
-### File Structure ###
+## File Structure 
 ```text
 Reef_Atlas/
 ├── .vscode/
