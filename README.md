@@ -103,17 +103,10 @@ Each reef popup displays:
 ## File Structure 
 ```text
 Reef_Atlas/
-├── .vscode/
-│   └── settings.json
 ├── backend/
-│   ├── __pycache__/
 │   ├── database.py
 │   └── main.py
 ├── frontend/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── favicon.svg
-│   │   └── icons.svg
 │   ├── src/
 │   │   ├── App.css
 │   │   ├── App.jsx
